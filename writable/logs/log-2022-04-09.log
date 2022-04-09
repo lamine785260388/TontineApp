@@ -1,0 +1,22 @@
+CRITICAL - 2022-04-09 09:30:36 --> Undefined variable: titre
+#0 C:\wamp64\www\tontine\app\Views\layout\entete.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 9, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('layout/entete', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(10): view('layout/entete')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 09:37:15 --> Undefined variable: adherentAcc
+#0 C:\wamp64\www\tontine\app\Views\layout\entete.php(84): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 84, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('layout/entete', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(10): view('layout/entete', Array)
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
