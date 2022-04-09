@@ -8,4 +8,8 @@ class TontineModel extends Model{
         return $this->where("idResponsable",$idAdherent)
                     ->findAll();
     }
+    function tontine($idtontine){
+        return $this->find($idtontine);
+
+    }
 }

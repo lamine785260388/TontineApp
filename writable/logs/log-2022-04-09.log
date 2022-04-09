@@ -20,3 +20,336 @@ CRITICAL - 2022-04-09 09:37:15 --> Undefined variable: adherentAcc
 #7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-04-09 10:35:04 --> Undefined variable: listeTontineResp
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 11, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 10:35:48 --> Undefined variable: listeTontineResp
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 11, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 10:35:49 --> Undefined variable: listeTontineResp
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 11, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 10:35:57 --> Undefined variable: listeTontineResp
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 11, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 10:36:52 --> Undefined variable: listeTontineResp
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(11): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 11, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index', Array)
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 11:45:50 --> syntax error, unexpected ',', expecting ']'
+#0 C:\wamp64\www\tontine\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('adherent/ajoute...')
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('adherent/ajoute...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 11:45:57 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+#0 C:\wamp64\www\tontine\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('adherent/ajoute...')
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('adherent/ajoute...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-09 11:56:46 --> Champ 'nbEcheance' inconnu dans field list
+CRITICAL - 2022-04-09 11:56:46 --> Champ 'nbEcheance' inconnu dans field list
+#0 C:\wamp64\www\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\wamp64\www\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\wamp64\www\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\wamp64\www\tontine\system\Database\BaseBuilder.php(1783): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\wamp64\www\tontine\system\Model.php(250): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\tontine\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\tontine\system\Model.php(636): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\tontine\app\Controllers\adherent.php(50): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->ajouterTontine()
+#9 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#10 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-09 12:16:41 --> Argument 1 passed to CodeIgniter\Validation\Validation::setRules() must be of the type array, bool given, called in C:\wamp64\www\tontine\system\Controller.php on line 160
+#0 C:\wamp64\www\tontine\system\Controller.php(160): CodeIgniter\Validation\Validation->setRules(false, Array)
+#1 C:\wamp64\www\tontine\app\Controllers\adherent.php(38): CodeIgniter\Controller->validate(false)
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->ajouterTontine()
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#4 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-09 12:17:55 --> "d/m/Y" is not a valid datetime format
+#0 C:\wamp64\www\tontine\system\I18n\Time.php(242): CodeIgniter\I18n\Exceptions\I18nException::forInvalidFormat('d/m/Y')
+#1 C:\wamp64\www\tontine\app\Controllers\adherent.php(41): CodeIgniter\I18n\Time::createFromFormat('d/m/Y', NULL)
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->ajouterTontine()
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#4 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-04-09 12:27:17 --> Undefined index: periodicite
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 26, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 12:27:32 --> Undefined index: périodicite
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 26, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 12:51:16 --> There is no data to update.
+#0 C:\wamp64\www\tontine\system\BaseModel.php(1574): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 C:\wamp64\www\tontine\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 C:\wamp64\www\tontine\system\Model.php(662): CodeIgniter\BaseModel->update(Array, NULL)
+#3 C:\wamp64\www\tontine\app\Controllers\adherent.php(50): CodeIgniter\Model->update(Array)
+#4 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-09 13:03:56 --> Call to undefined method App\Models\TontineModel::tontine
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(59): CodeIgniter\Model->__call('tontine', Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:09:21 --> Cannot use object of type App\Models\TontineModel as array
+#0 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-09 13:10:03 --> Method name must be a string
+#0 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-04-09 13:10:36 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\wamp64\www\tontine\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('adherent/modifi...')
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('adherent/modifi...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:10:59 --> syntax error, unexpected '(', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+#0 C:\wamp64\www\tontine\system\Router\Router.php(175): CodeIgniter\Router\Router->autoRoute('adherent/modifi...')
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(719): CodeIgniter\Router\Router->handle('adherent/modifi...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:11:11 --> Call to undefined method App\Models\TontineModel::tontine
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(59): CodeIgniter\Model->__call('tontine', Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:15:07 --> Undefined index: dateDeb
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 60, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:15:41 --> Undefined index: dateDeb
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 60, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:15:41 --> Undefined index: dateDeb
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 60, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:18:24 --> Undefined index: dateDeb
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 60, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:19:31 --> Undefined variable: dateDeb
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:19:32 --> Undefined variable: dateDeb
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:19:33 --> Undefined variable: dateDeb
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:26:00 --> syntax error, unexpected '}', expecting ';'
+#0 C:\wamp64\www\tontine\system\Autoloader\Autoloader.php(245): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\t...')
+#1 C:\wamp64\www\tontine\system\Autoloader\Autoloader.php(223): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Tont...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Tont...')
+#3 C:\wamp64\www\tontine\app\Controllers\adherent.php(58): spl_autoload_call('App\\Models\\Tont...')
+#4 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-09 13:26:30 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:27:34 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 60, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:29:22 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:29:50 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:30:53 --> Function name must be a string
+#0 C:\wamp64\www\tontine\system\View\View.php(212): include()
+#1 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/modifi...', Array, true)
+#3 C:\wamp64\www\tontine\app\Controllers\adherent.php(67): view('adherent/modifi...')
+#4 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('2')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-04-09 13:30:53 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:33:09 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:33:17 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:35:49 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:35:59 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:38:13 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 13:38:21 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-09 13:41:29 --> Champ 'périodicite' inconnu dans field list
+CRITICAL - 2022-04-09 13:41:29 --> Champ 'périodicite' inconnu dans field list
+#0 C:\wamp64\www\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\wamp64\www\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\wamp64\www\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\wamp64\www\tontine\system\Database\BaseBuilder.php(1783): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\wamp64\www\tontine\system\Model.php(250): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\tontine\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\tontine\system\Model.php(636): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\tontine\app\Controllers\adherent.php(102): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->ajouterTontine()
+#9 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#10 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
