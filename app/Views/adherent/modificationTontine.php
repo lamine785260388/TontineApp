@@ -29,12 +29,12 @@
           
             <div class="col-sm-6">
               <label for="prenom" class="form-label">Date début</label>
-              <?= form_input(['name'=>'dateDeb','class'=>'form-control','placeholder'=>'jj/mm/AAAA','value'=>set_value("dateDeb")]);?>
+              <?= form_input(['name'=>'dateDeb','class'=>'form-control','placeholder'=>'jj/mm/AAAA','value'=>isset($tontine["dateDeb"])?$tontine["dateDeb"]:set_value("dateDeb")]);?>
                </div>
 
             <div class="col-sm-6">
               <label for="nbEcheance" class="form-label">Nb écheances</label>
-              <?= form_dropdown('nbEcheance',$nbEcheance,set_value("nbEcheance"),["class"=>"form-control"]);?>
+              <?= form_dropdown('nbEcheance',$nbEcheance,isset($tontine["nbEcheance"])?$tontine["nbEcheance"]:set_value("nbEcheance"),["class"=>"form-control"]);?>
             
             </div>
 
@@ -43,7 +43,7 @@
 
           <hr class="my-4">
 
-    <?= form_submit(['name'=>'ajouter','class'=>'w-100 btn btn-primary','placeholder'=>'jj/mm/AAAA','value'=>'Ajouter']) ?>
+    <?= form_submit(['name'=>'ajouter','class'=>'w-100 btn btn-primary','placeholder'=>'jj/mm/AAAA','value'=>'Modifier']) ?>
         </form>
       </div>
     </div>

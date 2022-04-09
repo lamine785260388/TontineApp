@@ -353,3 +353,139 @@ CRITICAL - 2022-04-09 13:41:29 --> Champ 'périodicite' inconnu dans field list
 #10 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #12 {main}
+CRITICAL - 2022-04-09 15:26:57 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:28:56 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:29:00 --> Undefined index: périodicité
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 26, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 15:30:44 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-04-09 15:30:54 --> Champ 'periodicite' inconnu dans field list
+CRITICAL - 2022-04-09 15:30:54 --> Champ 'periodicite' inconnu dans field list
+#0 C:\wamp64\www\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\wamp64\www\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\wamp64\www\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\wamp64\www\tontine\system\Database\BaseBuilder.php(1783): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\wamp64\www\tontine\system\Model.php(250): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\tontine\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\tontine\system\Model.php(636): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\tontine\app\Controllers\adherent.php(102): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->ajouterTontine()
+#9 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#10 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-04-09 15:31:34 --> Champ 'periodicite' inconnu dans field list
+CRITICAL - 2022-04-09 15:31:34 --> Champ 'periodicite' inconnu dans field list
+#0 C:\wamp64\www\tontine\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `to...', 0)
+#1 C:\wamp64\www\tontine\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `to...')
+#2 C:\wamp64\www\tontine\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `to...')
+#3 C:\wamp64\www\tontine\system\Database\BaseBuilder.php(1783): CodeIgniter\Database\BaseConnection->query('INSERT INTO `to...', Array, false)
+#4 C:\wamp64\www\tontine\system\Model.php(250): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\wamp64\www\tontine\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\wamp64\www\tontine\system\Model.php(636): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\wamp64\www\tontine\app\Controllers\adherent.php(102): CodeIgniter\Model->insert(Array)
+#8 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->ajouterTontine()
+#9 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#10 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-04-09 15:32:32 --> Undefined index: periodicité
+#0 C:\wamp64\www\tontine\app\Views\adherent\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\wamp64\\www\\t...', 26, Array)
+#1 C:\wamp64\www\tontine\system\View\View.php(212): include('C:\\wamp64\\www\\t...')
+#2 C:\wamp64\www\tontine\system\View\View.php(215): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\wamp64\www\tontine\system\Common.php(1119): CodeIgniter\View\View->render('adherent/index', Array, true)
+#4 C:\wamp64\www\tontine\app\Controllers\adherent.php(16): view('adherent/index')
+#5 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->index()
+#6 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#7 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-04-09 15:33:41 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:33:52 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:34:33 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:34:41 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:37:16 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:38:27 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:38:31 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:38:37 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-04-09 15:39:37 --> Trying to access array offset on value of type null
+#0 C:\wamp64\www\tontine\app\Controllers\adherent.php(61): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', 'C:\\wamp64\\www\\t...', 61, Array)
+#1 C:\wamp64\www\tontine\system\CodeIgniter.php(825): App\Controllers\adherent->modifierTontine('starter-templat...')
+#2 C:\wamp64\www\tontine\system\CodeIgniter.php(412): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\adherent))
+#3 C:\wamp64\www\tontine\system\CodeIgniter.php(320): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\wamp64\www\tontine\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

@@ -2,6 +2,8 @@
 
 namespace App\Controllers;
 helper(['html','form']);
+
+use App\Models\AdherentModel;
 use App\Models\TontineModel;
 use CodeIgniter\I18n\Time;
 
@@ -16,6 +18,26 @@ class adherent extends BaseController
         echo view("adherent/index");
         echo view("layout/pied");
 
+    }
+    public function supprimerTontine($idtontine){
+        $tontine=new TontineModel();
+        $tontine->delete($idtontine);
+        $session=session();
+        $session->setFlashdata("successAjTontine","Suppression effectué");
+        return redirect()->to('adherent');
+
+
+    }
+    public function tontine($idtontine){
+        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adherentAcc"];
+        //1.recupérer  les infos
+        $tontine=new TontineModel();
+        $maTontine=$tontine->tontine($idtontine);
+        //2.ajouter à la liste des données transmises
+        $data["maTontine"]=$maTontine;
+        echo view('layout/entete',$data);
+        echo view("adherent/tontine");
+        echo view("layout/pied");
     }
     public function modifierTontine($idtontine){
         $data=["titre"=>"sama Tontine::Faciliter la gestion des tontine","menuActif"=>"adherentAcc"];
