@@ -19,6 +19,15 @@ class adherent extends BaseController
         echo view("layout/pied");
 
     }
+    public function adhesion(){
+        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adherent"];
+        //1.Instancier le modéle et recupérer les tontines disponible
+        $idAdherent=session()->get('id');
+        $model=new TontineModel($idAdherent);
+        $listeTontine=$model->listeTontines();
+//2.ajouter à la liste des données transmises
+   $data["listeTontines"]=$listeTontine;
+    }
     public function supprimerTontine($idtontine){
         $tontine=new TontineModel();
         $tontine->delete($idtontine);
@@ -29,14 +38,22 @@ class adherent extends BaseController
 
     }
     public function tontine($idtontine){
-        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adherentAcc"];
+       
         //1.recupérer  les infos
         $tontine=new TontineModel();
         $maTontine=$tontine->tontine($idtontine);
         //2.ajouter à la liste des données transmises
+        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adherentAcc"];
         $data["maTontine"]=$maTontine;
+        //3.listes des participants
+        $participe=new AdherentModel();
+        $parricipants=$participe->participer($idtontine);
+        $data["participants"]=$parricipants;
+        
+
+        
         echo view('layout/entete',$data);
-        echo view("adherent/tontine");
+         echo view("adherent/tontine");
         echo view("layout/pied");
     }
     public function modifierTontine($idtontine){

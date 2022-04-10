@@ -1,41 +1,26 @@
-<h1>Bienvenue  <?= session()->get("prenom")." ".session()->get("nom");?></h1>
-<p class="fs-5 col-md-8">
-    Vous pouvez gérer vos tontines, adherer aux tontines disponibles, créer de nouvelles tontines,...
-</p>
-<h2>Les tontines gérées
-    <a href="<?= base_url("adherent/ajouterTontine"); ?>" class="btn btn-success">Nouvelle tontine</a>
-</h2>
-<?php if(session()->get('successAjTontine')):?>
-    <div class="alert-success alert" role="alert">
-        <?= session()->get('successAjTontine') ?>
-
+<h1>Detail tontine  <?= $maTontine["nom"];?></h1>
+<a class="btn btn-success" href="<?= base_url('adherent');?>" >Revenir à la liste</a><hr>
+<div class="card mb-3">
+    <div class="card-header"> Description  <?= $maTontine["nom"];?></div>
+    <div class="card-body">
+        <p class="card-title">Début: <?= date_format(date_create($maTontine["dateDeb"]),"d/m/y");?></p>
+        <p>Nombre d'échéances prévues: <?= $maTontine["nbEcheance"]." échéances" ;?>  </p>
     </div>
-    <?php endif ;?>
-<table class="table">
-    <tr>
-        <th> Nom</th><th>Périodicité</th><th>Date début</th><th>Nb échéances</th><th>...</th>
-    </tr>
-    <?php //si aucune tontine
-    if(!$listeTontineResp): ?>
-    <tr><td colspan="5" class="table-danger text-center">
-        Aucune tontine géréee pour l'instant...
-    </td></tr>
-    <?php else :
-    foreach($listeTontineResp as $tontine):
-         ?>
-         <tr><td><?= $tontine['nom'] ?></td><td><?= $tontine["periodicite"] ?></td>
-         <td><?= date_format(date_create($tontine['dateDeb']),"d M Y") ?></td>
-         <td><?= $tontine["nbEcheance"] ?></td>
-         <td> <a href="<?= base_url("adherent/modifierTontine/".$tontine["id"])?>" class="btn btn-warning">modifier</a>
-        <a href="<?= base_url("adherent/supprimerTontine/".$tontine["id"])?>" class="btn btn-danger" onclick="return confirmation();">supprimer</a>
-        <a href="<?= base_url("adherent/tontine/".$tontine["id"])?>" class="btn btn-info">Participant</a>
-        </td>
-         <?php endforeach ;?>
-        </tr>
+</div>
+<div class="card mb-3">
+    <div class="card-header"> Les participants</div>
+    <div class="card-body">
+    <?php if(!$participants): ?>
+        <p>Aucun participant à cette tontine</p>
+        <?php else: ?>
+            <ul class="list-group">
+                <?php foreach($participants as $participants) :?>
+                <li class="list-group-item">
+                    <h5><?= $participants["prenom"]." ".$participants["nom"];?></h5>
+                    <p>Cotisation: <?= $participants["Montant"] ?> CFA</p>
+                </li>
+              <?php endforeach;?>
+            </ul>
         <?php endif ;?>
-</table>
-<script>
-   function confirmation(){
-return confirm("voulez vous vraiment supprimer");
-    }
-</script>
+    </div>
+</div>
