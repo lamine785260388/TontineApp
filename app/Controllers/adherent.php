@@ -5,6 +5,8 @@ helper(['html','form']);
 
 use App\Models\AdherentModel;
 use App\Models\TontineModel;
+use App\Models\ParticipeModel;
+use App\Models\EcheanceModel;
 use CodeIgniter\I18n\Time;
 
 class adherent extends BaseController
@@ -19,14 +21,76 @@ class adherent extends BaseController
         echo view("layout/pied");
 
     }
+    public function genererEcheance($idTontine){
+        //1.Récupérer les informations sur la tontine courante
+        $model=new TontineModel();
+        $maTontine=$model->tontine($idTontine);
+        //2.créer un tableau des échéances
+        $tabEcheance=[];
+        $dateDeb=Time::createFromFormat('Y-m-d',$maTontine["dateDeb"]);       
+         for($i=1;$i<=$maTontine["nbEcheance"];$i++){
+            $tabEcheance[]=["date"=>$dateDeb->toDateString(),'numero'=>$i,'idTontine'=>$idTontine];
+            if($maTontine["periodicite"]=="mensuelle"){ 
+                $dateDeb=$dateDeb->addMonths(1);
+            }
+            else{
+                $dateDeb=$dateDeb->addDays(7);
+            }
+        }
+        //3.Insérer le tableau dans la base de donné
+
+        $modelEcheance=new EcheanceModel();
+        $nbInserer=$modelEcheance->generer($tabEcheance);
+        //4.rediriger l'utilisateur sur la page tontine avec un message de confirmation
+        $session=session();
+        $session->setFlashdata("successajEcheance",$nbInserer." échéances ajoutées");
+        return redirect()->to('adherent/tontine/'.$idTontine); 
+
+
+    }
+    public function adhererTontine($idTontine){
+        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adhesion"];
+        if($this->request->getMethod()=="post"){
+            $reglesValid=[
+                "Montant"=>["rules"=>"required|integer",
+                "errors"=>["required"=>"le montant est obligatoire","integer"=>"le montant doit etre un entier"]
+                ]
+            ];
+        
+    if(!$this->validate($reglesValid)){
+        $data["validation"]=$this->validator;
+    }else{
+        $participeData=[
+            "idTontine"=>$idTontine,
+            "Montant"=>$this->request->getPost('Montant'),
+            "idAdherant"=>session()->get('id')
+        ];
+        $participe=new ParticipeModel();
+        $participe->insert($participeData);
+        $session=session();
+        $session->setFlashdata("successAdhesion","Adhésion effectué avec succés");
+        return redirect()->to("adherent/adhesion");
+    }
+        } else{
+            $data["idTontine"]=$idTontine;
+        }
+        echo view('layout/entete',$data);
+        echo view("adherent/ajoutAdhesion");
+       echo view("layout/pied");
+    
+    }
     public function adhesion(){
-        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adherent"];
+        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adhesion"];
         //1.Instancier le modéle et recupérer les tontines disponible
         $idAdherent=session()->get('id');
-        $model=new TontineModel($idAdherent);
-        $listeTontine=$model->listeTontines();
+        $model=new TontineModel();
+        $listeTontine=$model->listeTontines($idAdherent);
 //2.ajouter à la liste des données transmises
    $data["listeTontines"]=$listeTontine;
+   echo view('layout/entete',$data);
+         echo view("adherent/adhesion");
+        echo view("layout/pied");
+
     }
     public function supprimerTontine($idtontine){
         $tontine=new TontineModel();
@@ -47,8 +111,8 @@ class adherent extends BaseController
         $data["maTontine"]=$maTontine;
         //3.listes des participants
         $participe=new AdherentModel();
-        $parricipants=$participe->participer($idtontine);
-        $data["participants"]=$parricipants;
+        $participants=$participe->participer($idtontine);
+        $data["participants"]=$participants;
         
 
         

@@ -5,6 +5,14 @@
     <div class="card-body">
         <p class="card-title">Début: <?= date_format(date_create($maTontine["dateDeb"]),"d/m/y");?></p>
         <p>Nombre d'échéances prévues: <?= $maTontine["nbEcheance"]." échéances" ;?>  </p>
+        <p>
+        <a href="<?= base_url("adherent/genererEcheance/".$maTontine["id"])?>" class="btn btn-success">Générer</a>
+        </p>
+        <?php if(session()->get("successajEcheance")): ?>
+    <div class="row alert alert-success">
+    <?= session()->get("successajEcheance");?>
+    </div>
+<?php endif;?>
     </div>
 </div>
 <div class="card mb-3">

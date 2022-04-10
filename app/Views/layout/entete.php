@@ -83,7 +83,7 @@
       <?php if(session()->get("profil")=="adherent") :?>
         <ul class="nav nav-pills">
         <li class="nav-item"><a href="<?= base_url("adherent");?>" class="nav-link <?= $menuActif=="adherentAcc"?"active":""?>" aria-current="page">Acceuil</a></li>
-        <li class="nav-item"><a href="<?= base_url('adherent/adhesion');?>" class="nav-link <?= $menuActif=="inscription"?"active":""?>">Adhesion</a></li>
+        <li class="nav-item"><a href="<?= base_url('adherent/adhesion');?>" class="nav-link <?= $menuActif=="adhesion"?"active":""?>">Adhesion</a></li>
         <li class="nav-item"><a href="<?= base_url('utilisateur/deconnexion');?>" class="nav-link <?= $menuActif=="connexion"?"active":""?>">Deconnexion</a></li>
         </ul>
       <?php elseif(session()->get("profil")=="administrateur") : ?> 

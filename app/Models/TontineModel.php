@@ -12,8 +12,8 @@ class TontineModel extends Model{
         return $this->find($idtontine);
 
     }
-    function ListeTontine($idAdherent){
-//1.Recupérer la liste des tontines auxquelles l'aherent participent
+    function listeTontines($idAdherent){
+//1.Recupérer la liste des tontines auxquelles l'aherent participent builder parceque c'est une autre table
 $listPart=$this->builder("participer")
 ->distinct()
 ->select('idTontine')
