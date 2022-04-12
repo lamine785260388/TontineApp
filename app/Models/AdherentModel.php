@@ -10,4 +10,19 @@ class AdherentModel extends Model{
 		->where("t.id",$idtontine)
 		->findAll();
 }
+function cotiser($idtontine){
+	$cotis=$this->selectCount('adherent.id',"nbCotis")
+	            ->select('adherent.id')
+				->join("cotiser as c","c.idAdherant=adherent.id")
+				->join("echeance as e","e.id=c.idEcheance")
+				->where("e.idTontine",$idtontine)
+				->groupBy('adherent.id')
+				->get()->getResultArray();
+				$cotisations=[];
+				foreach($cotis as $coti)
+				$cotisations[$coti["id"]]=$coti["nbCotis"];
+				return $cotisations;
+
+
+}
 }

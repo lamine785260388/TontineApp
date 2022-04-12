@@ -14,6 +14,12 @@
         
     </div>
 <?php endif;?>
+<?php if(session()->get('nonAutorise')): ?>
+    <div class="alert-danger alert" role="alert">
+        <?= session()->get('nonAutorise') ?>
+        
+    </div>
+<?php endif;?>
  <form method="post">
 
     <h1 class="h3 mb-3 fw-normal">Enter vos login et mot de passe</h1>

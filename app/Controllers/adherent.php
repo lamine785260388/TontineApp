@@ -7,10 +7,12 @@ use App\Models\AdherentModel;
 use App\Models\TontineModel;
 use App\Models\ParticipeModel;
 use App\Models\EcheanceModel;
+use App\Models\cotiseModel;
 use CodeIgniter\I18n\Time;
 
 class adherent extends BaseController
 {
+  
     public function index(){
         $model=new TontineModel();
         $idAdherent=session()->get("id");
@@ -19,6 +21,16 @@ class adherent extends BaseController
         echo view('layout/entete',$data);
         echo view("adherent/index");
         echo view("layout/pied");
+
+    }
+    public function payerEcheance($idAdherent,$idtontine,$idEcheance){
+        //1.inserer la cotisation à travers le modele cotise
+        $modelcotise=new cotiseModel();
+        $modelcotise->insert(["idAdherant"=>$idAdherent,"idEcheance"=>$idEcheance]);
+        //2.Revenir sur la page tontine avec le message de confirmation
+ $session=session();
+ $session->setFlashdata("successajCotise"," Cotisations enregistré");
+  return redirect()->to("adherent/tontine/".$idtontine);
 
     }
     public function genererEcheance($idTontine){
@@ -112,10 +124,16 @@ class adherent extends BaseController
         //3.listes des participants
         $participe=new AdherentModel();
         $participants=$participe->participer($idtontine);
+        //4.ajouter à la liste des donés transmise
         $data["participants"]=$participants;
-        
-
-        
+        //5.récupérer la liste des échéances 
+        $modelEcheance=new EcheanceModel();
+        $echeances=$modelEcheance->echeancesTontine($idtontine);
+      $data["echeances"]=$echeances;
+        //recupére le nombre de cotisations par adherent
+        $modelAd=new AdherentModel();
+        $cotisation=$modelAd->cotiser($idtontine);
+        $data["cotisations"]=$cotisation;
         echo view('layout/entete',$data);
          echo view("adherent/tontine");
         echo view("layout/pied");
@@ -213,4 +231,5 @@ echo view("layout/pied");
         echo view("adherent/ajoutTontine");
         echo view("layout/pied");
     }
+   
 }
