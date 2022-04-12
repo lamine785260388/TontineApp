@@ -33,4 +33,15 @@ $this->whereNotIn("id",$idTons);
                    ->findAll();
 
     }
+    public function nombretontine(){
+	
+        $cotis=$this->select("id")->findAll();
+        $i=0;
+        foreach($cotis as $count){
+           $i=$i+1;
+        }
+       
+        return $i;
+                  
+   }
 }

@@ -25,4 +25,18 @@ function cotiser($idtontine){
 
 
 }
+ function nombreadherent(){
+	
+	 $cotis=$this->select("adherent.id")->findAll();
+	 $i=0;
+	 foreach($cotis as $count){
+		$i=$i+1;
+	 }
+	
+	 return $i;
+	           
+}
+function listeUtilisateur(){
+	return $this->findAll();
+}
 }

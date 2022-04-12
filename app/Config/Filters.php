@@ -3,6 +3,7 @@
 namespace Config;
 
 use App\Filters\AdherentFilter;
+use App\Filters\AdministrateurFilter;
 use App\Filters\MembreFilter;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
@@ -26,7 +27,8 @@ class Filters extends BaseConfig
         'invalidchars'  => InvalidChars::class,
         'secureheaders' => SecureHeaders::class,
         'membreFilter'  =>MembreFilter::class,
-         'adherentFilter'=>AdherentFilter::class,
+        'adherentFilter'=>AdherentFilter::class,
+        'admisFilter'=>AdministrateurFilter::class,
     ];
 
     /**
@@ -69,6 +71,8 @@ class Filters extends BaseConfig
      * @var array
      */
     public $filters = ['membreFilter'=>['before'=>['adherent','adherent/*','administrateur','administrateur/*']],
-    'adherentFilter'=>['before'=>['adherent','adherent/*']]
+    'adherentFilter'=>['before'=>['adherent','adherent/*']],
+    'admisFilter'=>['before'=>['administrateur','administrateur/*']]
+    
 ];
 }
