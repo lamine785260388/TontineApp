@@ -32,7 +32,7 @@
             <ul class="list-group">
                 <?php foreach($participants as $participants) :?>
                 <li class="list-group-item">
-                    <h5><?= $participants["prenom"]." ".$participants["nom"];?></h5>
+                    <h5><?= $participants["prenom"];?></h5>
                     <p>Cotisation: <?= $participants["Montant"] ?> CFA</p>
                     <?php if(session()->get("successajCotise")): ?>
     <div class="row alert alert-success">

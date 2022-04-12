@@ -16,12 +16,36 @@ class adherent extends BaseController
     public function index(){
         $model=new TontineModel();
         $idAdherent=session()->get("id");
-        $listeTontineResp=$model->ListeTontineResp($idAdherent);   
-        $data=["titre"=>"sama Tontine::Faciliter la gestion des tontine","menuActif"=>"adherentAcc","listeTontineResp"=>$listeTontineResp];
+        $tontinesParticiper=$model->tontineParticiper($idAdherent);
+        $listeTontineResp=$model->ListeTontineResp($idAdherent); 
+        $data["tontinesParticiper"]=$tontinesParticiper;  
+        $data=["titre"=>"sama Tontine::Faciliter la gestion des tontine","menuActif"=>"adherentAcc","listeTontineResp"=>$listeTontineResp,"tontinesParticiper"=>$tontinesParticiper];
         echo view('layout/entete',$data);
         echo view("adherent/index");
         echo view("layout/pied");
 
+    }
+    public function echeanceTontine($idtontine){
+          
+        //1.recupérer  les infos
+        $tontine=new TontineModel();
+        $maTontine=$tontine->tontine($idtontine);
+        //2.ajouter à la liste des données t$ransmises
+        $data=["titre"=>"Sama tontine::Acceuil adherent","menuActif"=>"adherentAcc"];
+        $data["maTontine"]=$maTontine;
+        
+       
+       //Echeances 
+       $modelEcheance=new EcheanceModel();
+       $echeances=$modelEcheance->echeancesTontine($idtontine);
+       $data["echeances"]=$echeances;
+       $cotisationsfaite=$modelEcheance->Noscotisation($idtontine);
+      $data["cotisationsfaite"]=$cotisationsfaite;
+     
+       echo view('layout/entete',$data);
+      echo view("adherent/Echeancetontine");
+       echo view("layout/pied");
+        
     }
     public function payerEcheance($idAdherent,$idtontine,$idEcheance){
         //1.inserer la cotisation à travers le modele cotise

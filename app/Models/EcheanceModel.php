@@ -10,5 +10,11 @@ class EcheanceModel extends Model{
    function echeancesTontine($idtontine){
        return $this->where('idTontine',$idtontine)->findAll();
    }
+   function Noscotisation($idtontine){
+    
+       return $this->join("cotiser as c","c.idEcheance=echeance.id")
+                    ->where("echeance.idTontine",$idtontine)
+                   ->where("c.idAdherant",session()->get("id"))->findAll();;
+   }
 
 }

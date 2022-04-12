@@ -88,7 +88,7 @@
         </ul>
       <?php elseif(session()->get("profil")=="administrateur") : ?> 
         <ul class="nav nav-pills">
-        <li class="nav-item"><a href="<?= base_url("administrateur");?>" class="nav-link <?= $menuActif=="acceuil"?"active":""?>" aria-current="page">Acceuil</a></li>
+        <li class="nav-item"><a href="<?= base_url("administrateur");?>" class="nav-link <?= $menuActif=="administrateurAcc"?"active":""?>" aria-current="page">Acceuil</a></li>
         <li class="nav-item"><a href="<?= base_url('utilisateur/gestion');?>" class="nav-link <?= $menuActif=="inscription"?"active":""?>">Inscription</a></li>
         <li class="nav-item"><a href="<?= base_url('utilisateur/deconnexion');?>" class="nav-link <?= $menuActif=="connexion"?"active":""?>">Deconnexion</a></li>
         </ul>

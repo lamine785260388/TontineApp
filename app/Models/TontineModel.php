@@ -27,4 +27,10 @@ if($idTons)
 $this->whereNotIn("id",$idTons);
  return $this->findAll();
     }
+    function tontineParticiper($idAdherent){
+    return    $this->join("participer as p","p.idTontine=tontine.id")
+                   ->where("p.idAdherant",$idAdherent)
+                   ->findAll();
+
+    }
 }
